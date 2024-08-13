@@ -1,5 +1,5 @@
-text = 'Hello Zaira'
-shift = 3
+text = str(input("What is the message would you like to cypher? "))
+shift = int(input("What's the number would you like to perform as key to cipher the message? "))
 
 def caesar(message, offset):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -16,4 +16,3 @@ def caesar(message, offset):
     print('encrypted text:', encrypted_text)
 
 caesar(text, shift)
-caesar(text, 13)
